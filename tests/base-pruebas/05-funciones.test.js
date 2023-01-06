@@ -15,19 +15,14 @@ describe('Pruebas en 05-funciones', () => {
         expect( testUser ).toEqual( user );
 
     });
-
-
-    test('getUsuarioActivo debe de retornar un objeto', () => {
+    test('getUsuarioActivo debe retornar un objeto', () => {
         
-        const name = 'Fernando';
-
-        const user = getUsuarioActivo( name );
-        
-        expect( user ).toStrictEqual({
+        let nombre="Gabriel"
+        const user = getUsuarioActivo(nombre);
+        expect( user ).toEqual( {
             uid: 'ABC567',
-            username: name
-        });
+            username: nombre
+        } );
 
     });
-
 });

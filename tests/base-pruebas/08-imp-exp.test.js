@@ -34,8 +34,6 @@ describe('Pruebas en 08-imp-exp', () => {
             { id: 4, name: 'Flash', owner: 'DC' }
         ]);
         expect( heroes ).toEqual( heroes.filter( (heroe) => heroe.owner === owner ) )
-
-
     });
 
     test('getHeroesByOwner debe de regresar heroes de Marvel', () => {
