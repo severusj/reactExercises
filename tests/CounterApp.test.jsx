@@ -22,7 +22,7 @@ describe('Pruebas en el <CounterApp />', () => {
     test('debe de incrementar con el botón +1', () => {
         
         render( <CounterApp value={ initialValue } /> );
-        fireEvent.click( screen.getByText('+1') )
+        fireEvent.click( screen.getByText('+1') ) //Fire event es de parte de react test library
         expect( screen.getByText('11') ).toBeTruthy();
 
     });
@@ -47,8 +47,4 @@ describe('Pruebas en el <CounterApp />', () => {
         expect( screen.getByText( 355 ) ).toBeTruthy();
 
     });
-
-
-
-
 });
